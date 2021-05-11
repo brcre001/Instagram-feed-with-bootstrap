@@ -8,9 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 
     <title>Bootstrap Feed</title>
   </head>
+
   <body>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -19,22 +21,22 @@
     <div>
     <!-- Instagram image and text -->
     <nav class="navbar navbar-light bg-light">
-    <a class="navbar-brand" href="#">
-        <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" href="https://www.instagram.com/">
+        <i class="fab fa-instagram"></i>
         Instagram
     </a>
-    </nav>
 
-    <!-- Create a new post modal-->
-    
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+    <ul class="nav nav-pills">
+    <li class="nav-item">
+
+    <!-- New Post Button -->
+    <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModal">
     Create a new post
     </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <!-- New Post Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
         <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -47,16 +49,26 @@
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-success">Save changes</button>
         </div>
         </div>
     </div>
     </div>
 
-
-
-    </div>
-
+    <!--Settings Dropdown Menu-->
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle bg-black-50 text-dark" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i></a>
+        <div class="dropdown-menu dropdown-menu-right">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Log out</a>
+        </div>
+    </li>
+    </ul>
+    </nav>
 
 </body>
 </html>
