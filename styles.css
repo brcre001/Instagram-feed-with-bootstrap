@@ -1,17 +1,4 @@
 
-ul.dropdown-menu {
-    background-color: darkgray;
-}
-ul.dropdown-menu:hover {
-    background-color: darkgray;
-}
-.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
-    background-color: darkgray;
-}
-.nav > li > a:focus, .nav > li > a:hover {
-    background-color: darkgray;
-}
-
-.nav > li > a, .nav .open > a:focus, .nav .open > a:active {
-    background-color: darkgray;
+body {
+    font-family: 'Arima Madurai', cursive;
 }
