@@ -7,8 +7,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="styles.css">
 
     <title>IG Feed Bootstrap</title>
   </head>
@@ -19,13 +19,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   
     <!-- Instagram image and text -->
-    <nav class="navbar navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> Instagram</a>
+    <nav class="navbar navbar-light bg-light sticky-top border-bottom mb-2">
+        <a class="navbar-brand" href="https://www.instagram.com/"><i class="fab fa-instagram"></i> Instagram</a>
         <ul class="nav nav-pills">
         <li class="nav-item">
 
     <!-- New Post Button -->
-    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+    <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#exampleModal">
         Create a new post
     </button>
 
@@ -60,53 +60,67 @@
         </ul>
     </nav>
 
+    <!-- Post Content -->
+    <div class="content">
 
-    <!-- Two Pages -->
-    <ul class="nav nav-pills mb-2 justify-content-center" id="pills-tab" role="tablist">
-    <li class="nav-item" role="presentation">
-        <a class="nav-link active text-secondary bg-white border" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i></a>
-    </li>
-    <li class="nav-item" role="presentation">
-        <a class="nav-link text-secondary bg-white border" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i></a>
-    </li>
-    </ul>
+        <!-- Two Pages -->
+        <ul class="nav nav-pills mb-2 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active text-secondary bg-white border mr-1" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fas fa-th fa-xs"></i></a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link text-secondary bg-white border ml-1" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square fa-xs"></i></a>
+        </li>
+        </ul>
 
-    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-content" id="pills-tabContent">
 
-    <!-- First Page-->
-        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ" class="img-fluid">
+        <!-- First Page-->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/100/2500/1656.jpg?hmac=gWyN-7ZB32rkAjMhKXQgdHOIBRHyTSgzuOK6U0vXb1w" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/101/2621/1747.jpg?hmac=cu15YGotS0gIYdBbR1he5NtBLZAAY6aIY5AbORRAngs" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/1012/3973/2639.jpg?hmac=s2eybz51lnKy2ZHkE2wsgc6S81fVD1W2NKYOSh8bzDc" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg" class="img-fluid">
+                </div> 
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/100/2500/1656.jpg?hmac=gWyN-7ZB32rkAjMhKXQgdHOIBRHyTSgzuOK6U0vXb1w" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/101/2621/1747.jpg?hmac=cu15YGotS0gIYdBbR1he5NtBLZAAY6aIY5AbORRAngs" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/1011/5472/3648.jpg?hmac=Koo9845x2akkVzVFX3xxAc9BCkeGYA9VRVfLE4f0Zzk" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/1012/3973/2639.jpg?hmac=s2eybz51lnKy2ZHkE2wsgc6S81fVD1W2NKYOSh8bzDc" class="img-fluid">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-                <img src="https://i.picsum.photos/id/1018/3914/2935.jpg?hmac=3N43cQcvTE8NItexePvXvYBrAoGbRssNMpuvuWlwMKg" class="img-fluid">
-            </div> 
-        </div>
 
-    <!-- Second Page -->
-        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
+        <!-- Second Page -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="card mx-auto" style="width: 50rem;">
+                <div class="d-flex justify-content-between">
+                    <h5 class="ml-1 mt-1">My First Post</h5>
+                    <h5 class="mr-1 mt-1 float-right">05/12</h5>
+                </div>
+                <img src="https://i.picsum.photos/id/0/5616/3744.jpg?hmac=3GAAioiQziMGEtLbfrdbcoenXoWAW-zlyEAMkfEdBzQ" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text"><strong>23 likes</strong></p>
+                    <p class="card-text">This is the first photo of my feed. I am trying my best to use bootstrap to enable myself to make beautiful webpages.</p>
+                    <p class="text-black-50"><i class="far fa-heart ml-2 mr-3"></i>Comment...</p>
+                </div>
+                </div>
+            </div>
         </div>
     </div>
 
