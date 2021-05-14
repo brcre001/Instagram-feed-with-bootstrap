@@ -7,11 +7,11 @@ body {
     font-family: 'Pacifico', cursive;
 }
 
-.mx-auto {
-    width: 50%;
-}
-
 .nav-pills .open .dropdown-toggle, .nav > .open.active > a:hover {
     background-color:#222;
     border-color: #333;
     }
+
+a:hover {
+    background-color: lightgrey;
+}
