@@ -7,6 +7,6 @@ body {
     font-family: 'Pacifico', cursive;
 }
 
-a:hover {
-    background-color: lightgrey;
+a:hover, a.active {
+    background-color: lightgrey !important;
 }
